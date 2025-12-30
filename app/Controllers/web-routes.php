@@ -20,7 +20,6 @@ use App\Controllers\CategoryController;
 use App\Controllers\CheckoutController;
 use App\Controllers\CollectionsController;
 use App\Controllers\CollectionController;
-use App\Controllers\LandingController;
 use App\Controllers\HomeController;
 use App\Controllers\ProductController;
 use App\Controllers\ProductsController;
@@ -35,7 +34,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 return static function(Slim\App $app): void {
     //* NOTE: Route naming pattern: [controller_name].[method_name]
     $app -> get('/', [LandingController::class, 'index'])
-        -> setName('home.index');
+        -> setName('landing.index');
 
     $app -> get('/home', [HomeController::class, 'index'])
         -> setName('home.index');

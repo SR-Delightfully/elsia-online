@@ -1,23 +1,26 @@
 <?php
-
-use App\Helpers\ViewHelper;
-
 $page_title = 'Home';
-ViewHelper::loadHeader($page_title);
-
-$categories  = $data['categories'] ?? [];
-$collections = $data['collections'] ?? [];
-
-$slides = 6;
 ?>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-<div id="hero-container" class="page center div-style-1">
-
+<div id="news-carousel">
 </div>
 
-<?php
-ViewHelper::loadJsScripts();
-ViewHelper::loadFooter();
-?>
+<div id="event-carousel">
+</div>
+
+<div id="user-spotlight">
+</div>
+
+<div id="pet-spotlight">
+</div>
+
+<div id="latest-posts">
+</div>
+
+<div id="latest-threads">
+</div>
+
+<div id="latest-activity">
+</div>
+
+

@@ -9,7 +9,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use App\Helpers\Core\PDOService;
 
-class HomeController extends BaseController
+class LandingController extends BaseController
 {
     protected PDOService $db;
 
@@ -24,8 +24,8 @@ class HomeController extends BaseController
 
         $data = [
             'page_title' => 'Welcome to Moss Cabinet',
-            'page_layout' => 'home-layout',
-            'contentView' => APP_VIEWS_PATH . '/homeView.php',
+            'page_layout' => 'landing-layout',
+            'contentView' => APP_VIEWS_PATH . '/landingView.php',
             'isNavBarShown' => true,
             'data' => [
                 'categories' => "",

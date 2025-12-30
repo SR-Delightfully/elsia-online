@@ -42,11 +42,10 @@ if ($isAdminView) {
     <?php ViewHelper::loadNavBar(); ?>
 <?php endif; ?>
 
-<div id="page-content">
+<div id="page-content" class="<?= $page_layout ?? ''?>">
     <?php require $contentView; ?>
 </div>
 
 <?php
-ViewHelper::loadJsScripts();
 ViewHelper::loadFooter();
 ?>
