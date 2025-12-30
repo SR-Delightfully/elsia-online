@@ -3,7 +3,7 @@
 use App\Helpers\ViewHelper;
 use App\Helpers\FlashMessage;
 
-$page_title = 'Welcome to Moss Cabinet!';
+$page_title = 'Welcome to Elsia Online!';
 ?>
 
 <div class="components-full-page-wrapper">

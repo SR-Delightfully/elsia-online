@@ -16,7 +16,7 @@ if (isset($_GET['lang'])) {
 $currentLang = $_SESSION['lang'] ?? 'en';
 LocalizationHelper::setLanguage($currentLang);
 
-$page_title    = $page_title ?? 'Moss Cabinet';
+$page_title    = $page_title ?? 'Elsia Online';
 $isNavBarShown = $isNavBarShown ?? true;
 
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';

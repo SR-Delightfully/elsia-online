@@ -56,7 +56,7 @@ class AdminController extends BaseController
         ")->fetchAll();
 
         $data = [
-            'page_title' => "Welcome to Moss Cabinet's admin dashboard",
+            'page_title' => "Welcome to Elsia Online's admin dashboard",
             'contentView' => APP_VIEWS_PATH . 'admin/dashboardView.php',
             'isNavBarShown' => true,
             'data' => [

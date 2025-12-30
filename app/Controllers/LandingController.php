@@ -23,7 +23,7 @@ class LandingController extends BaseController
     {
 
         $data = [
-            'page_title' => 'Welcome to Moss Cabinet',
+            'page_title' => 'Welcome to Elsia Online',
             'page_layout' => 'landing-layout',
             'contentView' => APP_VIEWS_PATH . '/landingView.php',
             'isNavBarShown' => true,

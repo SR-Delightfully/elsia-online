@@ -23,7 +23,7 @@ class HomeController extends BaseController
     {
 
         $data = [
-            'page_title' => 'Welcome to Moss Cabinet',
+            'page_title' => 'Welcome to Elsia Online',
             'page_layout' => 'home-layout',
             'contentView' => APP_VIEWS_PATH . '/homeView.php',
             'isNavBarShown' => true,

@@ -128,7 +128,7 @@ return static function(Slim\App $app): void {
     $app -> get('/profiles/[profile_id]', [ProfileController::class, 'index'])
         -> setName('profile.index');
 
-    // to view a list of shops hosted by moss cabinet:
+    // to view a list of shops hosted by elsia online:
     $app -> get('/collections', [CollectionsController::class, 'index'])
         -> setName('collections.index');
 
@@ -136,7 +136,7 @@ return static function(Slim\App $app): void {
     $app -> get('/collections/[collection_id]', [CollectionController::class, 'index'])
         -> setName('collection.index');
 
-    // to view all product categories available on moss cabinet
+    // to view all product categories available on elsia online
     $app -> get('/categories', [CategoriesController::class, 'index'])
         -> setName('categories.index');
 
@@ -144,7 +144,7 @@ return static function(Slim\App $app): void {
     $app -> get('/categories/[category_id]', [CategoryController::class, 'index'])
         -> setName('category.index');
 
-    // to view all products available on moss cabinet
+    // to view all products available on elsia online
     $app -> get('/products', [ProductsController::class, 'index'])
         -> setName('products.index');
 
