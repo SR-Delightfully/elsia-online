@@ -8,7 +8,7 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    padding: 3rem 6rem;
+    padding: 3rem 12rem;
     position: relative;
 }
 
@@ -89,6 +89,38 @@ body {
     grid-auto-rows: minmax(12rem, auto);
 }
 
+.forum-categories-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+    "cats cats cats cats"
+    "yourStats hot hot yourGuild"
+    "yourStats hot hot yourGuild"
+    "yourStats elsia elsia yourGuild"
+    "allStats elsia elsia allGuilds"
+    "allStats social social allGuilds"
+    "allStats social social allGuilds"
+    "forumSiteStats misc misc progress"
+    "forumSiteStats misc misc progress"
+    ;
+}
+
+.forums-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        "categoryTitle     categoryTitle     categoryTitle"
+        "categoryAbout    categoryAbout    categoryRules"
+        "subCategories    subCategories    subCategories"
+        "categoryForums  categoryForums  categoryPostStats"
+        "categoryForums  categoryForums  categoryPostStats"
+        "categoryForums  categoryForums  categoryUserStats"
+        "categoryForums  categoryForums  categoryUserStats"
+        ;
+    grid-template-columns: 2fr 2fr 1.25fr;
+    grid-auto-rows: minmax(12rem, auto);
+}
+
 /* landing components */
 #news-carousel {
     grid-area: news;
@@ -125,7 +157,7 @@ body {
     background-color: coral;
 }
 
-/* home components */
+/* forum categories components */
 #news-carousel {
     background-color: mediumvioletred;
 }
@@ -157,4 +189,130 @@ body {
 #latest-activity {
     grid-area: activity;
     background-color: slateblue;
+}
+
+/* forum cats components */
+#your-forum-stats {
+    grid-area: yourStats;
+    background-color: red;
+}
+
+#all-forum-stats {
+    grid-area: allStats;
+    background-color: orangered;
+}
+
+#your-guild-stats {
+    grid-area: yourGuild;
+    background-color: gold;
+}
+
+#all-guild-stats {
+    grid-area: allGuilds;
+    background-color: yellow;
+}
+
+#category-widgets {
+    grid-area: cats;
+    background-color: yellowgreen;
+}
+
+#whats-hot {
+    grid-area: hot;
+    background-color: lime;
+}
+
+#elsia-central {
+    grid-area: elsia;
+    background-color: limegreen;
+}
+
+#social-central {
+    grid-area: social;
+    background-color: green;
+}
+
+#category-misc {
+    grid-area: misc;
+    background-color: darkgreen;
+}
+
+#forum-site-stats {
+    grid-area: forumSiteStats;
+    background-color: seagreen;
+}
+
+#your-progress {
+    grid-area: progress;
+    background-color: olivedrab;
+}
+
+/* Category components */
+#news-carousel {
+    background-color: mediumvioletred;
+}
+
+#event-carousel {
+    background-color: pink;
+}
+
+#user-spotlight {
+    grid-area: spotlight;
+    background-color: plum;
+}
+
+#pet-spotlight {
+    grid-area: spotlight;
+    background-color: rosybrown;
+}
+
+#latest-posts {
+    grid-area: posts;
+    background-color: lightcoral;
+}
+
+#latest-threads {
+    grid-area: threads;
+    background-color: coral;
+}
+
+#latest-activity {
+    grid-area: activity;
+    background-color: slateblue;
+}
+
+/* forum cats components */
+#category-title {
+    grid-area: categoryTitle;
+    background-color: red;
+}
+
+#category-about {
+    grid-area: categoryAbout;
+    background-color: orangered;
+}
+
+#category-rules {
+    grid-area: categoryRules;
+    background-color: gold;
+}
+
+#subcategory-widgets {
+    grid-area: subCategories;
+    background-color: yellow;
+}
+
+#category-forums {
+    grid-area: categoryForums;
+    background-color: yellowgreen;
+}
+
+#category-post-stats {
+    grid-area: categoryPostStats;
+    background-color: lime;
+}
+
+#category-user-stats {
+    grid-area: categoryUserStats;
+    background-color: limegreen;
 }
