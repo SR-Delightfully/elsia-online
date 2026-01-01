@@ -1,3 +1,7 @@
+html {
+    filter: brightness(0.2);
+}
+
 body {
     background-color: gray;
     display: grid;
@@ -8,7 +12,6 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    padding: 3rem 12rem;
     position: relative;
 }
 
@@ -16,17 +19,17 @@ body {
     grid-area: top;
     background-color: slateblue;
     min-height: 26vh;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    /* border-top-left-radius: 2rem; */
+    /* border-top-right-radius: 2rem; */
 }
 
 #nav-bar-wrapper {
     background-color: cornflowerblue;
     width: 100%;
-    min-height: 23vh;
+    min-height: 28vh;
     position: relative;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    /* border-top-left-radius: 2rem; */
+    /* border-top-right-radius: 2rem; */
 }
 
 #nav-bar {
@@ -41,21 +44,22 @@ body {
     grid-area: bottom;
     background-color: rebeccapurple;
     min-height: 30vh;
-    position: relative;
-    margin-bottom: -3rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    /* position: relative; */
+    /* margin-bottom: -3rem; */
+    /* border-top-left-radius: 2rem; */
+    /* border-top-right-radius: 2rem; */
 }
 
 #page-content {
     grid-area: content;
     background-color: paleturquoise;
-    min-height: 200vh;
+    min-height: 225vh;
     max-width: 100%;
-    padding: 4rem 2rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    margin-bottom: 4rem;
+    /* border-bottom-left-radius: 2rem; */
+    /* border-bottom-right-radius: 2rem; */
+    /* margin-bottom: 4rem; */
+    padding: 4vh 4vw;
+
 }
 
 #page-content > div {
@@ -109,9 +113,9 @@ body {
     display: grid;
     gap: 2rem;
     grid-template-areas:
-        "categoryTitle     categoryTitle     categoryTitle"
-        "categoryAbout    categoryAbout    categoryRules"
-        "subCategories    subCategories    subCategories"
+        "categoryTitle   categoryTitle   categoryTitle"
+        "categoryAbout   categoryAbout   categoryRules"
+        "subCategories   subCategories   subCategories"
         "categoryForums  categoryForums  categoryPostStats"
         "categoryForums  categoryForums  categoryPostStats"
         "categoryForums  categoryForums  categoryUserStats"
@@ -119,6 +123,25 @@ body {
         ;
     grid-template-columns: 2fr 2fr 1.25fr;
     grid-auto-rows: minmax(12rem, auto);
+}
+
+.profile-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        "profileTitle     profileTitle     profileTitle     profileTitle"
+        "profileAvatar     profileAbout     profileAbout     profileVisitors"
+        "profileAvatar     profileAbout     profileAbout     profilePet"
+        "profileAvatar     profileSignature     profileSignature     profilePet"
+        "profileAvatar     profileBesties     profileBesties     profilePet"
+        "profileContact     profileComments     profileComments     profileAchievements"
+        "profileForumStats     profileComments     profileComments     profileAchievements"
+        "profileEquipList     profileComments     profileComments     profileWishList"
+        "profileFriends          profileComments   profileComments     profileWishList"
+        "profileFriends        profileComments     profileComments     profileWishList";
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: minmax(12rem, auto);
+    
 }
 
 /* landing components */
@@ -166,7 +189,7 @@ body {
     background-color: pink;
 }
 
-#user-spotlight {
+#profile-spotlight {
     grid-area: spotlight;
     background-color: plum;
 }
@@ -256,7 +279,7 @@ body {
     background-color: pink;
 }
 
-#user-spotlight {
+#profile-spotlight {
     grid-area: spotlight;
     background-color: plum;
 }
@@ -312,7 +335,78 @@ body {
     background-color: lime;
 }
 
-#category-user-stats {
+#category-profile-stats {
     grid-area: categoryUserStats;
     background-color: limegreen;
+}
+
+/* Profile components */
+#profile-title {
+    grid-area: profileTitle;
+    background-color: mediumvioletred;
+}
+
+#profile-visitors {
+    grid-area: profileVisitors;
+    background-color: pink;
+}
+
+#profile-avatar {
+    grid-area: profileAvatar;
+    background-color: palevioletred;
+}
+
+#profile-achievements {
+    grid-area: profileAchievements;
+    background-color: plum;
+}
+
+#profile-contact {
+    grid-area: profileContact;
+    background-color: rosybrown;
+}
+
+#profile-about {
+    grid-area: profileAbout;
+    background-color: lightcoral;
+}
+
+#profile-signature {
+    grid-area: profileSignature;
+    background-color: coral;
+}
+
+#profile-pet {
+    grid-area: profilePet;
+    background-color: orangered;
+}
+
+#profile-forum-stats {
+    grid-area: profileForumStats;
+    background-color: maroon;
+}
+
+#profile-equipped-list {
+    grid-area: profileEquipList;
+    background-color: darkred;
+}
+
+#profile-wish-list {
+    grid-area: profileWishList;
+    background-color: red;
+}
+
+#profile-comments {
+    grid-area: profileComments;
+    background-color: rebeccapurple;
+}
+
+#profile-besties {
+    grid-area: profileBesties;
+    background-color: darkmagenta;
+}
+
+#profile-friends {
+    grid-area: profileFriends;
+    background-color: darkorchid;
 }
